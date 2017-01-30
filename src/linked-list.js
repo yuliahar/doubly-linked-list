@@ -134,9 +134,8 @@ class LinkedList {
     }
 
     indexOf(data) {
-        var node = new Node(data);
         for (var i=0; i < this.length; i++) {
-            if (node.data === this.getNode(i).data) {
+            if (data === this.getNode(i).data) {
                 return i;
             }
         }
