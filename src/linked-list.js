@@ -119,14 +119,14 @@ class LinkedList {
         var temp = null;
         this._tail = this._head;
 
-        while (curr !== null) {
+        while (curr) {
             temp = curr.prev;
             curr.prev = curr.next;
             curr.next = temp;
             curr = curr.prev;
         }
 
-        if (temp !== null) {
+        if (temp) {
             this._head = temp.prev;
         }
 
